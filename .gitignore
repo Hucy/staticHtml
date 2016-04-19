@@ -1,0 +1,8 @@
+node_modules/
+out/
+build/*
+# IDE
+.idea
+
+# config
+config.js

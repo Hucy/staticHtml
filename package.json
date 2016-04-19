@@ -1,0 +1,26 @@
+{
+  "name": "signin",
+  "version": "1.0.0",
+  "description": "html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp inline",
+    "start": "gulp"
+  },
+  "author": "zhisui",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-jsbeautifier": "^1.0.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rev": "^7.0.0"
+  },
+  "dependencies": {}
+}
