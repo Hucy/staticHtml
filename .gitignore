@@ -1,9 +1,6 @@
 node_modules/
 out/
-/build/*.css
-/build/*.js
-/build/*.less
-/build/*.html
+
 # IDE
 .idea
 
