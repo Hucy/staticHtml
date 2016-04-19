@@ -22,7 +22,9 @@
     ```bash
     npm start
     ```
-5. 当页面完成后生成一个html文件，css和js以内联的方式写入，生成文件在`out`文件夹下。
+5.  编辑`build`文件夹下的html，less，js文件进行内容编写。
+
+6. 当页面完成后生成一个html文件，css和js以内联的方式写入，生成文件在`out`文件夹下。
 
     ```
     npm run build
