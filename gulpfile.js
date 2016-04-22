@@ -6,7 +6,7 @@ var prettify = require('gulp-jsbeautifier');
 var minifyCSS = require('gulp-minify-css');
 var inlinesource = require('gulp-inline-source');
 var browserSync = require('browser-sync').create();
-var rev = require('gulp-rev');
+var rename = require('gulp-rename');
 var notify = require('gulp-notify'),
     plumber = require('gulp-plumber');
 gulp.task('serve', ['less2css'], function() {
@@ -28,9 +28,12 @@ gulp.task('less2css', function () {
     .pipe(browserSync.stream());
 });
 gulp.task('inline',function(){
+        var date=new Date(),
+        time=date.getDate()+'_'+date.getHours()+'_'+date.getMinutes();
+
         gulp.src('./build/*.html')
         .pipe(inlinesource())
-        .pipe(rev())
+        .pipe(rename('out_'+time+'.html'))
         .pipe(gulp.dest('./out'));
 })
 gulp.task('default', ['serve']);
